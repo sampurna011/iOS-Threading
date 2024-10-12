@@ -7,7 +7,6 @@ import Foundation
 
 class Counter {
     var count = 0
-    let lock = NSLock()
     let semaphores = DispatchSemaphore(value: 1) // 1 represent that only one thread can access at one time
     
     func increment() {
